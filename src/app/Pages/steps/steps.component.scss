@@ -5,6 +5,10 @@
     align-items: center;
     gap: 15px;
     margin-top: 20px;
+    .backText{
+        font-size: $fontSize12;
+        cursor: pointer;
+    }
     .pageNumber{
         display: flex;
         justify-content: center;
@@ -14,6 +18,14 @@
         border-radius: 50%;
         background-color: $grey;
         font-size: $fontSize12;
+        cursor: pointer;
+        position: relative;
+        .pageName{
+            position: absolute;
+            top: 28px;
+            color: $blue;
+            white-space: nowrap;
+        }
     }
     .arrow{
         color: $grey;
@@ -30,4 +42,17 @@
             font-weight: $fw600;
         }
     }
+}
+.totalPages{
+    text-align: center;
+    font-size: $fontSize12;
+    margin-top: 10px;
+    span{
+        color: $blue;
+    }
+}
+
+.stepsActive{
+    background-color: $blue !important;
+    color: $white;
 }

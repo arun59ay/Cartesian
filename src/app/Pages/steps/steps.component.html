@@ -1,10 +1,14 @@
 <div class="loadData">
-    <div class="pageNumber" *ngFor="let item of data">
-        <div class="number">{{item.id}}</div>
-        <!-- <div>{{item.name}}</div> -->
+    <div  class="backText" (click)="backClicked()">< Back</div>
+    <div *ngFor="let item of data">
+        <div class="pageNumber" [class.stepsActive]="item.id == stepData.step">
+            <div class="number" >{{item.id}}</div>
+            <div *ngIf="item.id == stepData.step" class="pageName">{{item.name}}</div>
+        </div>
     </div>
     <div class="arrow">></div>
     <div class="loadBtn">
-        <button class="btn">Review Loaded Data >></button>
+        <button class="btn" (click)="next()">Review Loaded Data >></button>
     </div>
 </div>
+<div class="totalPages">Step <span>{{stepData.step}}</span> to 20</div>

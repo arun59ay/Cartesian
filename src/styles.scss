@@ -2,15 +2,15 @@
 
 @font-face {
   font-family: "avenir-black";
-  src: url('./assets/fonts/AVENIR95BLACK.TTF'), format('woff2');
+  src: url('./assets/fonts/AVENIR95BLACK.TTF') format('woff2');
 }
 @font-face {
   font-family: "avenir-book";
-  src: url('./assets/fonts/AVENIR45BOOK_0.TTF'), format('woff2');
+  src: url('./assets/fonts/AVENIR45BOOK_0.TTF') format('woff2');
 }
 
   body{
     padding: 0;
     margin: 0;
-    font-family: "avenir-black";
+    font-family: "avenir-book";
 }

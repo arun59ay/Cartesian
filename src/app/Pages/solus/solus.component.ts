@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SolusComponent implements OnInit {
 
+  stepData: any = {
+    name: "Solus Data",
+    step: 3,   
+    route: "raw-data"
+  }
+
+
   constructor() { }
 
   ngOnInit(): void {

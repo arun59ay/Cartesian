@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewDataComponent implements OnInit {
 
+  stepData: any = {
+    name: "Review Data",
+    step: 2,   
+    route: "solus"
+  }
+
+  tableData: any=[
+    {
+      
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
